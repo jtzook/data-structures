@@ -1,0 +1,35 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Algos &amp; Data Structures for Fun &amp; Profit",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtzook/data-structures.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "algorithms",
+    "data",
+    "structures",
+    "linked",
+    "list",
+    "tree",
+    "binary",
+    "tree",
+    "leetcode"
+  ],
+  "author": "Jared Zook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtzook/data-structures/issues"
+  },
+  "homepage": "https://github.com/jtzook/data-structures#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
