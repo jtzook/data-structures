@@ -1,15 +1,14 @@
-interface LLNode {
-  data: any
-  next: LLNode | null
+class LLNode {
+  constructor(public data: any = null) {}
 }
 
 class LinkedList {
-  head: LLNode | null
+  head: LLNode
+  next: LLNode = null
 
   constructor(data: any) {
     this.head = {
-      data,
-      next: null
+      data
     }
   }
 }
