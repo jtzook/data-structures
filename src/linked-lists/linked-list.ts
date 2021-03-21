@@ -1,15 +1,16 @@
 class LLNode {
-  constructor(public data: any = null) {}
+  constructor(public data: any = null, public next: LLNode = null) {}
 }
 
 class LinkedList {
   head: LLNode
-  next: LLNode = null
 
   constructor(data: any) {
-    this.head = {
-      data
-    }
+    this.head = new LLNode(data)
+  }
+
+  insert(data: any) {
+    this.head.next = new LLNode(data)
   }
 }
 
