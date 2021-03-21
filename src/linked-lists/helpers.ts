@@ -17,6 +17,4 @@ export const removeDups = (ll: LinkedList) => {
       prev = cur
     }
   }
-
-  console.log('cur', LinkedList.toArray(ll))
 }
