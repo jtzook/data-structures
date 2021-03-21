@@ -21,11 +21,9 @@ describe('linked-list', () => {
       expect(ll.head.next.data).toEqual(extraData)
     }),
     it('populates a linked list from array input', () => {
-      ll.remove(initData)
+      ll = LinkedList.fromArray(inputList)
 
-      inputList.forEach((data) => ll.insert(data))
-
-      console.log('arr', LinkedList.toArray(ll))
+      expect(LinkedList.toArray(ll)).toEqual(inputList)
     }),
     it('returns an empty head node after removing only data node', () => {
       ll.remove(initData)

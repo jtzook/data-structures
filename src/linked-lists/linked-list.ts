@@ -5,8 +5,8 @@ class LLNode {
 class LinkedList {
   head: LLNode
 
-  constructor(data: any) {
-    this.head = new LLNode(data)
+  constructor(data: any = null) {
+    this.head = data ? new LLNode(data) : null
   }
 
   public insert(data: any) {
@@ -52,7 +52,21 @@ class LinkedList {
     }
   }
 
-  public static toArray(ll: LinkedList = null) {
+  public static fromArray(inputArr: any[]): LinkedList {
+    if (!inputArr.length) {
+      return
+    }
+
+    const ll = new LinkedList()
+
+    inputArr.forEach((datum) => {
+      ll.insert(datum)
+    })
+
+    return ll
+  }
+
+  public static toArray(ll: LinkedList): any[] {
     const elements = []
 
     let cur = ll.head
